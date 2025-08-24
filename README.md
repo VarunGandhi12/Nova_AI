@@ -1,34 +1,35 @@
 # NOVA – Voice-Based Intelligent Personal Assistant
 
-NOVA is a modular, voice-based intelligent personal assistant built with Python, NLP, and Speech Recognition. Inspired by J.A.R.V.I.S., it enables users to interact with their system through natural voice commands, automating everyday tasks such as opening applications, searching the web, retrieving information, sending emails, and managing reminders.
+NOVA is a Python-based personal assistant that takes voice commands and performs tasks like opening applications, searching the web, fetching weather updates, sending emails, and more. The goal was to build something lightweight and extensible, with core features that also work offline.
 
-🚀 Features
+✨ Key Features
 
-🎤 Voice Recognition & Text-to-Speech – Converts speech to text and responds with natural voice feedback.
+Voice to text using speech_recognition
 
-🤖 NLP Command Understanding – Identifies user intent and maps it to tasks.
+Text to speech with pyttsx3
 
-⚡ Task Automation – Launch applications, perform web searches, fetch weather updates, send emails, and play music.
+Can open apps, search Google/Wikipedia/YouTube, and fetch weather info
 
-🔐 Offline-First Design – Works offline for core features (app launch, file management, TTS).
+Simple email support through SMTP
 
-🔌 Extensible Architecture – Add new commands, APIs, or ML modules easily.
+Modular design so that new commands can be added easily
 
-🧩 API Integrations – Supports Wikipedia API, Weather API, YouTube, and SMTP for emails.
+Works offline for basic commands (opening apps, TTS, file management)
 
-🛠️ Tech Stack
+🛠 Tech Stack
 
-Programming Language: Python 3.9+
+Python 3.9+
 
-Libraries:
+Libraries: speech_recognition, pyttsx3, wikipedia, pywhatkit, requests, smtplib, os, subprocess
 
-speech_recognition, pyttsx3 – Speech-to-text & text-to-speech
+⚡ Getting Started
 
-wikipedia, pywhatkit, requests – Information retrieval & automation
+Clone the repository and install the required libraries:
+git clone https://github.com/<your-username>/nova-ai-assistant.git
+cd nova-ai-assistant
+pip install -r requirements.txt
 
-smtplib, email – Email support
+Run the program:
+python main.py
 
-os, subprocess – System-level tasks
-
-Architecture: Modular, offline-first with optional API integrations
 
